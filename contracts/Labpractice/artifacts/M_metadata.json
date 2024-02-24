@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "findFactorial",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Question/problem-4.sol": "M"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Question/problem-4.sol": {
+			"keccak256": "0x27ab62ed87ba0983edfc3e86e5328859f39bf99cc779136f9407f4aa7152ce43",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c73ee8cebca2bfd0eeb16d2a647aa04457efc1f98c440f1dc6a9f35e4bf2732",
+				"dweb:/ipfs/QmbYr1F9esRfgyt4E1B2WjccuS4xetrMyd58Yss15mnQ3M"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numB",
+						"type": "uint256"
+					}
+				],
+				"name": "addNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Question/problem-2.sol": "Additi"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Question/problem-2.sol": {
+			"keccak256": "0xdf3c05f7f5c6f570358a0f84f4da237c617eb5abd358d68ca589fd080b20050b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://112f96f0a5f12c0ebd48b689bf240b93bce43869bf77056a2a791fd4b71eb290",
+				"dweb:/ipfs/QmetuLMMbWQ8aER9XUh2FKLEkbf36NeAnPTzdn6ewLnaQ8"
+			]
+		}
+	},
+	"version": 1
+}
