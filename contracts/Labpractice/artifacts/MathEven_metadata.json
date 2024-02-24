@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "check",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Question/problem-5.sol": "MathEven"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Question/problem-5.sol": {
+			"keccak256": "0xc5d73c881712d6f7be5b330ff37e027750e64f38e1532061884ee3a712870f5c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c2c9af345368e5bce82e8dd6284a9ef7c6a6d7462b8097072cd39f2972123187",
+				"dweb:/ipfs/QmTrz2dVkqydNDqC8q3jNoHbXjqJsgJCaZTu2w5A5bZa85"
+			]
+		}
+	},
+	"version": 1
+}

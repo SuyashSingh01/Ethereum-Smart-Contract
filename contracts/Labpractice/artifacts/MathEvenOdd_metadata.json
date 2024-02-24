@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "check",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Question/problem-5.sol": "MathEvenOdd"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Question/problem-5.sol": {
+			"keccak256": "0x124b42e2d06e3a73cb946831e657cacffbbb137fbeacabb3112a421426efaf47",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://463e1164bbbe3885a28fe7ba4cd6eb3cee4d5c158c9f3c9d9364c23642681d6f",
+				"dweb:/ipfs/QmcoNGWmEptBShKtgtCwRorwBiDdVEXkHghBeRQ9sgMXJY"
+			]
+		}
+	},
+	"version": 1
+}
