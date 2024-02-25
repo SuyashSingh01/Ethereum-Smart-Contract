@@ -1,23 +1,37 @@
 
-// Problem-8:
-// Develop a contract with a function check Number that takes a uint256 parameter. 
-// Within this function, use an if statement to check if the number is even or odd, and return a corresponding string message.
+// Problem-11:
+// Develop a contract with a function addProductDetails that allows adding product details 
+// (productId, productName, price). Utilize a struct to organize and store this information in a mapping.
+
 
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
 
-contract MathEvenOdd {
-    function check(uint256 _num) public pure returns (string memory) {
-        if(_num%2==0)return " Even ";
-        else return "Odd";
+contract ProductContract {
+    struct Product {
+        string productName;
+        uint256 price;
+    }
+
+    mapping(uint256 => Product) public products;
+
+    function addProductDetails(uint256 _productId, string memory _productName, uint256 _price) public {
+        products[_productId] = Product(_productName, _price);
     }
 }
 
+// Explanation:
 
-// In this contract:
+// We define a contract named ProductContract.
+// Inside the contract, we define a struct named Product, which contains two variables: 
+// productName of type string and price of type uint256.This struct represents the details of a product.
+// We declare a mapping named products that maps a uint256 (productId) to a Product struct.
+//  This mapping is used to store the product details.
+// The addProductDetails function allows adding product details to the mapping. 
+// It takes three parameters: _productId, _productName, and _price. 
+// It creates a new Product struct with the provided details and stores 
+// it in the products mapping with the given _productId as the key.
 
-// We define a contract named MathEvenOdd.
-// It contains a function checkNumber that takes a uint256 parameter _num.
-// Inside the function, we use an if statement to check if _num is divisible by 2 without remainder, 
-// which indicates an even number. If so, it returns "Even"; otherwise, it returns "Odd".
-// The function returns a string message indicating whether the input number is even or odd.
+
+

@@ -1,36 +1,36 @@
 
-// Problem-9:
-// Construct a contract with a function is Prime that takes a uint256 parameter. 
-// Use loops and conditions to verify if the provided number is a prime number and return a boolean value.
+// Problem-12:
+// Create a contract with a function getProductInfo that takes a productId as input and returns the associated
+//  productName and price using the products mapping.
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Mathprime {
-    function Prime(uint256 _num) public pure returns (bool) {
-        bool res=true;
-        if(_num<=1)res=false;
-        
-        for(uint256 i=2;i*i<=_num;i++){
-            if(_num%i==0){
-                res=false;
-                break;
-            }
-        }
-        return res;
+contract ProductContract {
+    struct Product {
+        string productName;
+        uint256 price;
+    }
+
+    mapping(uint256 => Product) public products;
+
+    function addProductDetails(uint256 _productId, string memory _productName, uint256 _price) public {
+        products[_productId] = Product(_productName, _price);
+    }
+
+    function getProductInfo(uint256 _productId) public view returns (string memory, uint256) {
+        Product memory product = products[_productId];
+        return (product.productName, product.price);
     }
 }
+
 // Explanation:
 
-// We define a contract named Mathprime.
-// It contains a function Prime that takes a uint256 parameter _num and returns a bool.
-// We initialize a boolean variable res to true, assuming initially that _num is prime.
-// We have a conditional statement to check if _num is less than or equal to 1. 
-// If so, we set res to false because numbers less than or equal to 1 are not prime.
-// We then use a for loop to iterate from 2 to the square root of _num. 
-// This loop checks if _num is divisible by any number other than 1 and itself. 
-// If it is, then _num is not prime, and we set res to false and break out of the loop.
-// Finally, we return the value of res, which indicates whether _num is prime (true) or not (false).
-
-
-
+// This contract maintains a mapping products that maps a uint256 productId to a Product struct, where each
+//  Product struct contains a productName of type string and a price of type uint256.
+// The addProductDetails function allows adding product details to the mapping by specifying the productId, 
+// productName, and price.
+// The getProductInfo function retrieves the productName and price associated with a given productId.
+//  It takes _productId as input and returns a tuple containing the productName and price associated with 
+// that productId. The function is marked as view because it only reads data from the contract and doesn't 
+// modify its state.
